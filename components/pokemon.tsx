@@ -7,8 +7,8 @@ id:number
 }
 
 export const Pokemon = ({id} :pokemonProps)=> {
-  const face = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-  const dos = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/25.png"
+  const face = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`
+  const dos = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/${id}.png`
     const [image, setImage] = useState(face);
     
     function handleClick() {
